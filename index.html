@@ -1,0 +1,1582 @@
+<!DOCTYPE html>
+    <html lang="en">
+        <head>
+            <meta charset="utf-8">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+               
+            <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+            <title>Restaurant Details</title>
+            <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
+            <link href="css/bootstrap.min.css" rel="stylesheet">
+            <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet"> 
+            <link href="css/themes/fontawesome-stars.css" rel="stylesheet">   
+            <link type="text/css" rel="stylesheet" href="css/lightslider.css" />                           
+            <link rel="stylesheet" href="css/bootstrap_custom.css">
+            <link rel="stylesheet" href="css/style.css">
+            <!-- fancybox 2.1.7 -->
+            <link href="fancybox/jquery.fancybox.css" rel="stylesheet">
+
+            <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+            <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+            <!--[if lt IE 9]>
+              <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+              <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+            <![endif]-->
+            <style>
+              
+            </style>
+        </head>
+              
+        <body data-spy="scroll" data-target="#navbarOptions" data-offset="110">
+            <div class="container" id="contact_info">
+                <div class="row">
+                    <div class="col-sm-offset-0 col-sm-12 col-md-offset-1 col-md-11 col-lg-offset-2 col-lg-10">
+                        <h1>Restaurant XYZ</h1>
+                    </div>
+                    <div class="col-sm-6">
+                        <ul id="lightSlider">
+                            <li data-thumb="images/img_slider/restaurant01.jpg">
+                                <img src="images/img_slider/restaurant01.jpg" class="borders" alt="">
+                            </li>
+                            <li data-thumb="images/img_slider/restaurant02.jpg">
+                                <img src="images/img_slider/restaurant02.jpg" class="borders" alt="">
+                            </li>
+                            <li data-thumb="images/img_slider/restaurant03.jpg">
+                                <img src="images/img_slider/restaurant03.jpg" class="borders" alt="">
+                            </li>
+                            <li data-thumb="images/img_slider/restaurant04.jpg">
+                                <img src="images/img_slider/restaurant04.jpg" class="borders" alt="">
+                            </li>  
+                        </ul>          
+                    </div><!-- end col-sm-6 -->
+                    <div class="col-sm-6">
+                        <h2>Date de contact</h2>        
+                            <div class="table-responsive">
+                                <table class="table transparent">
+                                    <tbody>
+                                        <tr>
+                                            <td class="icons"><i class="fa fa-phone"></i>Telefon:</td>
+                                            <td>021 100 200</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="icons"><i class="fa fa-home"></i>Adresa:</td>
+                                            <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="icons"><i class="fa fa-map-marker"></i>Localitate:</td>
+                                            <td>Lorem ipsum dolor sit amet, consectetur </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="icons"><i class="fa fa-envelope"></i>Email:</td>
+                                            <td>Lorem ipsum dolor sit amet, consectetur</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="icons"><i class="fa fa-globe"></i>Site web:</td>
+                                            <td>Lorem ipsum dolor sit amet, consectetur</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="icons"><i class="fa fa-facebook"></i>Facebook:</td>
+                                            <td>Lorem ipsum dolor sit amet, consectetur</td>
+                                        </tr>
+                                    </tbody>  
+                                </table>
+                            </div><!-- end table-responsive -->
+                            
+                            <div id="rating">
+                                <div class="row">
+                                    <div class="col-sm-12">
+                                        <select id="vote_rating">
+                                            <option value="1">1</option>
+                                            <option value="2">2</option>
+                                            <option value="3">3</option>
+                                            <option value="4">4</option>
+                                            <option value="5">5</option>
+                                        </select>
+                                        <h5>0 Voturi, <a href="#">0 Recenzii</a></h5>
+                                    </div><!-- end col-sm-12 -->
+                                </div>
+                            </div><!-- end rating-->
+                            <p>Informatii incorecte ? Va rugam sa ne contactati.</p>
+                            <a href="#directions" class="btn btn-default hidden-sm visible-xs"><i class="fa fa-globe"></i> Spre local</a>
+                    </div><!-- end col-sm-6 -->
+                </div><!-- end row -->        
+            </div><!-- end container contact_info -->
+       
+       
+              
+            <nav id="navbarOptions" class="navbar navbar-default">
+                <div class="container" id="navigation_options">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbarOptionsCollapse"> 
+                            <span class="sr-only">Toggle navigation</span> 
+                            <span class="icon-bar"></span> 
+                            <span class="icon-bar"></span> 
+                            <span class="icon-bar"></span> 
+                        </button>
+                        <a class="navbar-brand" href="#contact_info">Denumire local</a> 
+                    </div><!-- end navbar-header -->
+                        
+                    <div class="collapse navbar-collapse" id="navbarOptionsCollapse">
+                        <ul class="nav navbar-nav navOptions">
+                            <li class="active">
+                                <a href="#place_details">Detalii local</a>
+                            </li>
+                            <li>
+                                <a href="#gallery">Galerie Imagini</a>
+                            </li>
+                            <li>
+                                <a href="#menu">Meniu</a>
+                            </li>                        
+                            <li>
+                                <a href="#directions">Directii spre local</a>
+                            </li>
+                            <li>
+                                <a href="#testimonial">Recenzii</a>
+                            </li>                    
+                        </ul>
+                    </div><!-- end collapse navbar-collapse -->
+                </div><!-- end container navigation_options -->
+             </nav>   
+              
+            
+                  
+                  
+            <div class="container" id="bootstrap_scrollspy">
+                <div id="place_details">
+                    <h3><i class="fa fa-wpexplorer"></i> Detalii local</h3>
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <p>
+                                FIRST paragraph Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eu sem tempor, varius quam at, luctus dui. Mauris magna metus, dapibus nec turpis vel, semper  malesuada ante. Vestibulum id metus ac nisl bibendum scelerisque non non purus. Suspendisse varius nibh non aliquet sagittis. In tincidunt orci sit amet elementum vestibulum. Vivamus fermentum in arcu in aliquam. Quisque aliquam porta odio in fringilla. Vivamus nisl leo, blandit at bibendum eu, tristique eget risus. Integer aliquet quam ut elit suscipit, id interdum neque porttitor. Integer faucibus ligula.Quis quam ut magna consequat faucibus. Pellentesque eget nisi a mi suscipit tincidunt. Ut tempus dictum risus. Pellentesque viverra sagittis quam at mattis. Suspendisse potenti. Aliquam sit amet gravida nibh, facilisis gravida odio. Phasellus auctor velit at lacus blandit, commodo iaculis justo viverra. Etiam vitae est arcu. Mauris vel congue dolor. Aliquam eget mi mi. Fusce quam tortor, commodo ac dui quis, bibendum viverra erat. Maecenas mattis lectus enim, quis tincidunt dui molestie euismod. Curabitur 
+                            </p>            
+                            <ul>
+                                <li>LIST lorem ipsum dolor sit amet</li>  
+                                <li>lorem ipsum dolor sit amet</li>  
+                                <li>lorem ipsum dolor sit amet</li>  
+                                <li>lorem ipsum dolor sit amet</li>  
+                                <li>lorem ipsum dolor sit amet</li>  
+                                <li>lorem ipsum dolor sit amet</li>  
+                                <li>lorem ipsum dolor sit amet</li>  
+                                <li>lorem ipsum dolor sit amet</li>  
+                            </ul>
+                            <p>
+                                SECOND paragraph Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eu sem tempor, varius quam at, luctus dui. Mauris magna metus, dapibus nec turpis vel, semper  malesuada ante. Vestibulum id metus ac nisl bibendum scelerisque non non purus. Suspendisse varius nibh non aliquet sagittis. In tincidunt orci sit amet elementum vestibulum. Vivamus fermentum in arcu in aliquam. Quisque aliquam porta odio in fringilla. Vivamus nisl leo, blandit at bibendum eu, tristique eget risus. Integer aliquet quam ut elit suscipit, id interdum neque porttitor. Integer faucibus ligula.Quis quam ut magna consequat faucibus. Pellentesque eget nisi a mi suscipit tincidunt. Ut tempus dictum risus. Pellentesque viverra sagittis quam at mattis. Suspendisse potenti. Aliquam sit amet gravida nibh, facilisis gravida odio. Phasellus auctor velit at lacus blandit, commodo iaculis justo viverra. Etiam vitae est arcu. Mauris vel congue dolor. Aliquam eget mi mi. Fusce quam tortor, commodo ac dui quis, bibendum viverra erat. Maecenas mattis lectus enim, quis tincidunt dui molestie euismod. Curabitur 
+                            </p>
+                            <p class="hidden-xs">
+                                THIRD paragraph Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eu sem tempor, varius quam at, luctus dui. Mauris magna metus, dapibus nec turpis vel, semper  malesuada ante. Vestibulum id metus ac nisl bibendum scelerisque non non purus. Suspendisse varius nibh non aliquet sagittis. In tincidunt orci sit amet elementum vestibulum. Vivamus fermentum in arcu in aliquam. Quisque aliquam porta odio in fringilla. Vivamus nisl leo, blandit at bibendum eu, tristique eget risus. Integer aliquet quam ut elit suscipit, id interdum neque porttitor. Integer faucibus ligula.Quis quam ut magna consequat faucibus. Pellentesque eget nisi a mi suscipit tincidunt. Ut tempus dictum risus. Pellentesque viverra sagittis quam at mattis. Suspendisse potenti. Aliquam sit amet gravida nibh, facilisis gravida odio. Phasellus auctor velit at lacus blandit, commodo iaculis justo viverra. Etiam vitae est arcu. Mauris vel congue dolor. Aliquam eget mi mi. Fusce quam tortor, commodo ac dui quis, bibendum viverra erat. Maecenas mattis lectus enim, quis tincidunt dui molestie euismod. Curabitur 
+                            </p>
+                        </div><!-- end col-sm-12 -->
+                    </div><!-- end row -->
+                </div><!-- end place_details-->
+                         
+                 
+                <div id="gallery" class="galleries">
+                    <h3><i class="fa fa-picture-o"></i> Galerie imagini</h3>
+                    <div class="row">
+                        <div class="col-xs-3">
+                            <div class="thumbnail">
+                                <a href="images/gallery/gallery_1.jpg"  title="Restaurant img1">
+                                    <img src="images/gallery/gallery_1.jpg" alt="Image Gallery 1">
+                                </a>                                
+                            </div>
+                        </div><!-- end col-xs-3 -->
+                        <div class="col-xs-3">
+                            <div class="thumbnail">
+                                <a href="images/gallery/gallery_2.jpg"  title="Restaurant img2">
+                                    <img src="images/gallery/gallery_2.jpg" alt="Image Gallery 2">
+                                </a>
+                            </div>
+                        </div><!-- end col-xs-3 -->
+                        <div class="col-xs-3">
+                            <div class="thumbnail">
+                                <a href="images/gallery/gallery_3.jpg"  title="Restaurant img3">
+                                    <img src="images/gallery/gallery_3.jpg" alt="Image Gallery 3">
+                                </a>
+                            </div>
+                        </div><!-- end col-xs-3 -->
+                        <div class="col-xs-3">
+                            <div class="thumbnail">
+                                <a href="images/gallery/gallery_4.jpg"  title="Restaurant img4">
+                                    <img src="images/gallery/gallery_4.jpg" alt="Image Gallery 4">
+                                </a>
+                            </div>
+                        </div><!-- end col-xs-3 -->
+                    </div><!-- end row -->
+                </div><!-- end gallery -->
+
+                <div  id="menu">
+                <h3><i class="fa fa-map-o"></i> Meniu</h3>
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <ul class="menus">
+                                <li class="selected">
+                                    <a href="#food_category1">
+                                        <div class="row">
+                                            <div class="col-xs-12 col-sm-3 imgs">
+                                                <img src="images/menus/pizza.svg" title="Pizza" alt="Pizza picture"> 
+                                            </div>
+                                            <div class="hidden-xs col-sm-9 category">
+                                                <h3>Pizza</h3>
+                                            </div>
+                                        </div>                            
+                                    </a>                    
+                                </li>
+                                <li>
+                                    <a href="#food_category2">
+                                        <div class="row">
+                                            <div class="col-xs-12 col-sm-3 imgs">
+                                                <img src="images/menus/soup.svg" title="Ciorbe" alt="Soup picture"> 
+                                            </div>
+                                            <div class="hidden-xs col-sm-9 category">
+                                                <h3>Ciorbe</h3>
+                                            </div>
+                                        </div>                            
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#food_category3">
+                                        <div class="row">
+                                            <div class="col-xs-12 col-sm-3 imgs">
+                                                <img src="images/menus/pasta.svg" title="Paste" alt="Pasta picture"> 
+                                            </div>
+                                            <div class="hidden-xs col-sm-9 category">
+                                                <h3>Paste</h3>
+                                            </div>
+                                        </div>                            
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#food_category4">
+                                        <div class="row">
+                                            <div class="col-xs-12 col-sm-3 imgs">
+                                                <img src="images/menus/steak.svg" title="Fripturi"  alt="Steak picture"> 
+                                            </div>
+                                            <div class="hidden-xs col-sm-9 category">
+                                                <h3>Fripturi</h3>
+                                            </div>
+                                        </div>                            
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#food_category5">
+                                        <div class="row">
+                                            <div class="col-xs-12 col-sm-3 imgs">
+                                                <img src="images/menus/fast-food.svg" title="Fast Food" alt="Fast food picture"> 
+                                            </div>
+                                            <div class="hidden-xs col-sm-9 category">
+                                                <h3>Fast food</h3>
+                                            </div>
+                                        </div>                            
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#food_category6">
+                                        <div class="row">
+                                            <div class="col-xs-12 col-sm-3 imgs">
+                                                <img src="images/menus/salad_veg.svg" title="Salate"  alt="Salad picture"> 
+                                            </div>
+                                            <div class="hidden-xs col-sm-9 category">
+                                                <h3>Salate</h3>
+                                            </div>
+                                        </div>                            
+                                    </a>                    
+                                </li>
+                                <li>
+                                    <a href="#food_category7">
+                                        <div class="row">
+                                            <div class="col-xs-12 col-sm-3 imgs">
+                                                <img src="images/menus/seafood.svg" title="Fructe de mare"  alt="Seafood picture"> 
+                                            </div>
+                                            <div class="hidden-xs col-sm-9 category">
+                                                <h3>Fructe de mare</h3>
+                                            </div>
+                                        </div>                            
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#food_category8">
+                                        <div class="row">
+                                            <div class="col-xs-12 col-sm-3 imgs">
+                                                <img src="images/menus/coffee.svg" title="Cafea"  alt="Coffee picture"> 
+                                            </div>
+                                            <div class="hidden-xs col-sm-9 category">
+                                                <h3>Cafea</h3>
+                                            </div>
+                                        </div>                            
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#food_category9">
+                                        <div class="row">
+                                            <div class="col-xs-12 col-sm-3 imgs">
+                                                <img src="images/menus/tea.svg"  title="Ceai" alt="Tea picture"> 
+                                            </div>
+                                            <div class="hidden-xs col-sm-9 category">
+                                                <h3>Ceai</h3>
+                                            </div>
+                                        </div>                            
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#food_category10">
+                                        <div class="row">
+                                            <div class="col-xs-12 col-sm-3 imgs">
+                                                <img src="images/menus/vodka.svg" title="Alcoolice tari"  alt="Alcoholic drinks picture"> 
+                                            </div>
+                                            <div class="hidden-xs col-sm-9 category">
+                                                <h3>Alcoolice</h3>
+                                            </div>
+                                        </div>                            
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#food_category11">
+                                        <div class="row">
+                                            <div class="col-xs-12 col-sm-3 imgs">
+                                                <img src="images/menus/wine.svg" title="Vinuri"  alt="Wine picture"> 
+                                            </div>
+                                            <div class="hidden-xs col-sm-9 category">
+                                                <h3>Vinuri</h3>
+                                            </div>
+                                        </div>                            
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#food_category12">
+                                        <div class="row">
+                                            <div class="col-xs-12 col-sm-3 imgs">
+                                                <img src="images/menus/beer.svg" title="Bere"  alt="Beer picture"> 
+                                            </div>
+                                            <div class="hidden-xs col-sm-9 category">
+                                                <h3>Bere</h3>
+                                            </div>
+                                        </div>                            
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#food_category13">
+                                        <div class="row">
+                                            <div class="col-xs-12 col-sm-3 imgs">
+                                                <img src="images/menus/beverage.svg" title="Sucuri" alt="Beverages image"> 
+                                            </div>
+                                            <div class="hidden-xs col-sm-9 category">
+                                                <h3>Sucuri</h3>
+                                            </div>
+                                        </div>                            
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#food_category14">
+                                        <div class="row">
+                                            <div class="col-xs-12 col-sm-3 imgs">
+                                                <img src="images/menus/fruits.svg" title="Fructe" alt="Fruits picture"> 
+                                            </div>
+                                            <div class="hidden-xs col-sm-9 category">
+                                                <h3>Fructe</h3>
+                                            </div>
+                                        </div>                            
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#food_category15">
+                                        <div class="row">
+                                            <div class="col-xs-12 col-sm-3 imgs">
+                                                <img src="images/menus/cake.svg" title="Deserturi" alt="Cakes images"> 
+                                            </div>
+                                            <div class="hidden-xs col-sm-9 category">
+                                                <h3>Deserturi</h3>
+                                            </div>
+                                        </div>                            
+                                    </a>
+                                </li>
+                            </ul><!-- end menus -->
+                        </div><!-- end col-sm-4 -->
+
+                        <div class="col-sm-8">
+                            <ul id="food_category1" class="food_info">
+                                <li>
+                                    <div class="item row">
+                                        <div class="col-xs-4 col-sm-2">
+                                            <img src="images/menus/food-generic.jpg"  class="img-circle img-responsive" alt="Generic Food image">
+                                        </div>
+                                        <div class="col-xs-8 col-sm-10">
+                                            <div class="info">
+                                                <h4>Pizza Margherita</h4>
+                                                <h5>Pret</h5>
+                                                <p>
+                                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque placeat eos nesciunt.
+                                                </p>
+                                            </div><!-- end info --> 
+                                        </div> 
+                                    </div> <!-- end item -->
+                                </li>
+                                <li>
+                                    <div class="item row">
+                                        <div class="col-xs-4 col-sm-2">
+                                            <img src="images/menus/food-generic.jpg"  class="img-circle img-responsive" alt="Generic Food image">
+                                        </div>
+                                        <div class="col-xs-8 col-sm-10">
+                                            <div class="info">
+                                                <h4>Pizza Errol</h4>
+                                                <h5>Pret</h5>
+                                                <p>
+                                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque placeat eos nesciunt.
+                                                </p>
+                                            </div><!-- end info --> 
+                                        </div> 
+                                    </div> <!-- end item -->
+                                </li>
+                                <li>
+                                    <div class="item row">
+                                        <div class="col-xs-4 col-sm-2">
+                                            <img src="images/menus/food-generic.jpg"  class="img-circle img-responsive" alt="Generic Food image">
+                                        </div>
+                                        <div class="col-xs-8 col-sm-10">
+                                            <div class="info">
+                                                <h4>Pizza Quatro Stagione</h4>
+                                                <h5>Pret</h5>
+                                                <p>
+                                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque placeat eos nesciunt.
+                                                </p>
+                                            </div><!-- end info --> 
+                                        </div> 
+                                    </div> <!-- end item -->
+                                </li>
+                                <li>
+                                    <div class="item row">
+                                        <div class="col-xs-4 col-sm-2">
+                                            <img src="images/menus/food-generic.jpg"  class="img-circle img-responsive" alt="Generic Food image">
+                                        </div>
+                                        <div class="col-xs-8 col-sm-10">
+                                            <div class="info">
+                                                <h4>Pizza Diavolo</h4>
+                                                <h5>Pret</h5>
+                                                <p>
+                                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque placeat eos nesciunt.
+                                                </p>
+                                            </div><!-- end info --> 
+                                        </div> 
+                                    </div> <!-- end item -->
+                                </li>
+                                <li>
+                                    <div class="item row">
+                                        <div class="col-xs-4 col-sm-2">
+                                            <img src="images/menus/food-generic.jpg"  class="img-circle img-responsive" alt="Generic Food image">
+                                        </div>
+                                        <div class="col-xs-8 col-sm-10">
+                                            <div class="info">
+                                                <h4>Pizza Carolina</h4>
+                                                <h5>Pret</h5>
+                                                <p>
+                                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque placeat eos nesciunt.
+                                                </p>
+                                            </div><!-- end info --> 
+                                        </div> 
+                                    </div> <!-- end item -->
+                                </li>
+                                <li>
+                                    <div class="item row">
+                                        <div class="col-xs-4 col-sm-2">
+                                            <img src="images/menus/food-generic.jpg"  class="img-circle img-responsive" alt="Generic Food image">
+                                        </div>
+                                        <div class="col-xs-8 col-sm-10">
+                                            <div class="info">
+                                                <h4>Pizza Formaggio</h4>
+                                                <h5>Pret</h5>
+                                                <p>
+                                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque placeat eos nesciunt.
+                                                </p>
+                                            </div><!-- end info --> 
+                                        </div> 
+                                    </div><!-- end item -->
+                                </li>
+                                <li>
+                                    <div class="item row">
+                                        <div class="col-xs-4 col-sm-2">
+                                            <img src="images/menus/food-generic.jpg"  class="img-circle img-responsive" alt="Generic Food image">
+                                        </div>
+                                        <div class="col-xs-8 col-sm-10">
+                                            <div class="info">
+                                                <h4>Pizza Carbonara</h4>
+                                                <h5>Pret</h5>
+                                                <p>
+                                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque placeat eos nesciunt.
+                                                </p>
+                                            </div><!-- end info --> 
+                                        </div> 
+                                    </div><!-- end item -->
+                                </li>
+                                <li>
+                                    <div class="item row">
+                                        <div class="col-xs-4 col-sm-2">
+                                            <img src="images/menus/food-generic.jpg"  class="img-circle img-responsive" alt="Generic Food image">
+                                        </div>
+                                        <div class="col-xs-8 col-sm-10">
+                                            <div class="info">
+                                                <h4>Pizza Cocogiambo</h4>
+                                                <h5>Pret</h5>
+                                                <p>
+                                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque placeat eos nesciunt.
+                                                </p>
+                                            </div><!-- end info --> 
+                                        </div> 
+                                    </div><!-- end item -->
+                                </li>
+                                <li>
+                                    <div class="item row">
+                                        <div class="col-xs-4 col-sm-2">
+                                            <img src="images/menus/food-generic.jpg"  class="img-circle img-responsive" alt="Generic Food image">
+                                        </div>
+                                        <div class="col-xs-8 col-sm-10">
+                                            <div class="info">
+                                                <h4>Pizza Supremia</h4>
+                                                <h5>Pret</h5>
+                                                <p>
+                                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque placeat eos nesciunt.
+                                                </p>
+                                            </div><!-- end info --> 
+                                        </div> 
+                                    </div> <!-- end item -->
+                                </li>
+                                <li>
+                                    <div class="item row">
+                                        <div class="col-xs-4 col-sm-2">
+                                            <img src="images/menus/food-generic.jpg"  class="img-circle img-responsive" alt="Generic Food image">
+                                        </div>
+                                        <div class="col-xs-8 col-sm-10">
+                                            <div class="info">
+                                                <h4>Pizza Macaronara</h4>
+                                                <h5>Pret</h5>
+                                                <p>
+                                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque placeat eos nesciunt.
+                                                </p>
+                                            </div><!-- end info --> 
+                                        </div> 
+                                    </div><!-- end item -->
+                                </li>
+                                <li>
+                                    <a href="#food_category1" class="to-top">Back to Top</a>
+                                </li>
+                            </ul><!-- end category1 food_info -->
+
+                            <ul id="food_category2" class="food_info">
+                                <li>
+                                    <div class="item row">
+                                        <div class="col-xs-4 col-sm-2">
+                                            <img src="images/menus/food-generic.jpg"  class="img-circle img-responsive" alt="Generic Food image">
+                                        </div>
+                                        <div class="col-xs-8 col-sm-10">
+                                            <div class="info">
+                                                <h4>Sandu Ciorba</h4>
+                                                <h5>Pret</h5>
+                                                <p>
+                                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque placeat eos nesciunt.
+                                                </p>
+                                            </div><!-- end info --> 
+                                        </div> 
+                                    </div><!-- end item -->
+                                </li>
+                                <li>
+                                    <div class="item row">
+                                        <div class="col-xs-4 col-sm-2">
+                                            <img src="images/menus/food-generic.jpg"  class="img-circle img-responsive" alt="Generic Food image">
+                                        </div>
+                                        <div class="col-xs-8 col-sm-10">
+                                            <div class="info">
+                                                <h4>Ciorba Taraneasca</h4>
+                                                <h5>Pret</h5>
+                                                <p>
+                                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque placeat eos nesciunt.
+                                                </p>
+                                            </div><!-- end info --> 
+                                        </div> 
+                                    </div> <!-- end item -->
+                                </li>
+                                <li>
+                                    <div class="item row">
+                                        <div class="col-xs-4 col-sm-2">
+                                            <img src="images/menus/food-generic.jpg"  class="img-circle img-responsive" alt="Generic Food image">
+                                        </div>
+                                        <div class="col-xs-8 col-sm-10">
+                                            <div class="info">
+                                                <h4>Ciorba de burta</h4>
+                                                <h5>Pret</h5>
+                                                <p>
+                                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque placeat eos nesciunt.
+                                                </p>
+                                            </div><!-- end info --> 
+                                        </div> 
+                                    </div> <!-- end item -->
+                                </li>
+                                <li>
+                                    <div class="item row">
+                                        <div class="col-xs-4 col-sm-2">
+                                            <img src="images/menus/food-generic.jpg"  class="img-circle img-responsive" alt="Generic Food image">
+                                        </div>
+                                        <div class="col-xs-8 col-sm-10">
+                                            <div class="info">
+                                                <h4>Ciorba Orasaneasca</h4>
+                                                <h5>Pret</h5>
+                                                <p>
+                                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque placeat eos nesciunt.
+                                                </p>
+                                            </div><!-- end info --> 
+                                        </div> 
+                                    </div> <!-- end item -->
+                                </li>
+                                <li>
+                                    <div class="item row">
+                                        <div class="col-xs-4 col-sm-2">
+                                            <img src="images/menus/food-generic.jpg"  class="img-circle img-responsive" alt="Generic Food image">
+                                        </div>
+                                        <div class="col-xs-8 col-sm-10">
+                                            <div class="info">
+                                                <h4>Ciorba a la grec</h4>
+                                                <h5>Pret</h5>
+                                                <p>
+                                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque placeat eos nesciunt.
+                                                </p>
+                                            </div><!-- end info --> 
+                                        </div> 
+                                    </div> <!-- end item -->
+                                </li>
+                                <li>
+                                    <div class="item row">
+                                        <div class="col-xs-4 col-sm-2">
+                                            <img src="images/menus/food-generic.jpg"  class="img-circle img-responsive" alt="Generic Food image">
+                                        </div>
+                                        <div class="col-xs-8 col-sm-10">
+                                            <div class="info">
+                                                <h4>Ciorba ungureasca</h4>
+                                                <h5>Pret</h5>
+                                                <p>
+                                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque placeat eos nesciunt.
+                                                </p>
+                                            </div><!-- end info --> 
+                                        </div> 
+                                    </div> <!-- end item -->
+                                </li>
+                                <li>
+                                    <div class="item row">
+                                        <div class="col-xs-4 col-sm-2">
+                                            <img src="images/menus/food-generic.jpg"  class="img-circle img-responsive" alt="Generic Food image">
+                                        </div>
+                                        <div class="col-xs-8 col-sm-10">
+                                            <div class="info">
+                                                <h4>Ciorba moldoveneasca</h4>
+                                                <h5>Pret</h5>
+                                                <p>
+                                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque placeat eos nesciunt.
+                                                </p>
+                                            </div><!-- end info --> 
+                                        </div> 
+                                    </div><!-- end item -->
+                                </li>
+                                <li>
+                                    <div class="item row">
+                                        <div class="col-xs-4 col-sm-2">
+                                            <img src="images/menus/food-generic.jpg"  class="img-circle img-responsive" alt="Generic Food image">
+                                        </div>
+                                        <div class="col-xs-8 col-sm-10">
+                                            <div class="info">
+                                                <h4>Ciorba de varza</h4>
+                                                <h5>Pret</h5>
+                                                <p>
+                                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque placeat eos nesciunt.
+                                                </p>
+                                            </div><!-- end info --> 
+                                        </div> 
+                                    </div> <!-- end item -->
+                                </li>
+                                <li>
+                                    <div class="item row">
+                                        <div class="col-xs-4 col-sm-2">
+                                            <img src="images/menus/food-generic.jpg"  class="img-circle img-responsive" alt="Generic Food image">
+                                        </div>
+                                        <div class="col-xs-8 col-sm-10">
+                                            <div class="info">
+                                                <h4>Ciorba buna</h4>
+                                                <h5>Pret</h5>
+                                                <p>
+                                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque placeat eos nesciunt.
+                                                </p>
+                                            </div><!-- end info --> 
+                                        </div> 
+                                    </div> <!-- end item -->
+                                </li>
+                                <li>
+                                    <div class="item row">
+                                        <div class="col-xs-4 col-sm-2">
+                                            <img src="images/menus/food-generic.jpg"  class="img-circle img-responsive" alt="Generic Food image">
+                                        </div>
+                                        <div class="col-xs-8 col-sm-10">
+                                            <div class="info">
+                                                <h4>Ciorba 10</h4>
+                                                <h5>Pret</h5>
+                                                <p>
+                                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque placeat eos nesciunt.
+                                                </p>
+                                            </div><!-- end info --> 
+                                        </div> 
+                                    </div> <!-- end item -->
+                                </li>
+                                <li>
+                                    <a href="#food_category2" class="to-top">Back to Top</a>
+                                </li>
+                            </ul><!-- end category2 food_info div -->
+
+                            <ul id="food_category3" class="food_info">
+                                <li>
+                                    <div class="item row">
+                                        <div class="col-xs-4 col-sm-2">
+                                            <img src="images/menus/food-generic.jpg"  class="img-circle img-responsive" alt="Generic Food image">
+                                        </div>
+                                        <div class="col-xs-8 col-sm-10">
+                                            <div class="info">
+                                                <h4>Tortelini</h4>
+                                                <h5>Pret</h5>
+                                                <p>
+                                                    Lorem ipsum dolor sit amet.
+                                                </p>
+                                            </div><!-- end info --> 
+                                        </div> 
+                                    </div><!-- end item -->
+                                </li>
+                                <li>
+                                    <div class="item row">
+                                        <div class="col-xs-4 col-sm-2">
+                                            <img src="images/menus/food-generic.jpg"  class="img-circle img-responsive" alt="Generic Food image">
+                                        </div>
+                                        <div class="col-xs-8 col-sm-10">
+                                            <div class="info">
+                                                <h4>Paste in sos de rosii</h4>
+                                                <h5>Pret</h5>
+                                                <p>
+                                                    Lorem ipsum dolor sit amet.
+                                                </p>
+                                            </div><!-- end info --> 
+                                        </div> 
+                                    </div><!-- end item -->
+                                </li>
+                                <li>
+                                    <a href="#food_category3" class="to-top">Back to Top</a>
+                                </li>
+                            </ul><!-- end category3 food_info div -->
+                                
+                            <ul id="food_category4" class="food_info">
+                                <li>
+                                    <div class="item row">
+                                        <div class="col-xs-4 col-sm-2">
+                                            <img src="images/menus/food-generic.jpg"  class="img-circle img-responsive" alt="Generic Food image">
+                                        </div>
+                                        <div class="col-xs-8 col-sm-10">
+                                            <div class="info">
+                                                <h4>Friptura in unt</h4>
+                                                <h5>Pret</h5>
+                                                <p>
+                                                    Lorem ipsum dolor sit amet.
+                                                </p>
+                                            </div><!-- end info --> 
+                                        </div> 
+                                    </div><!-- end item -->
+                                </li>
+                                <li>
+                                    <a href="#food_category4" class="to-top">Back to Top</a>
+                                </li>
+                            </ul><!-- end category4 food_info div -->
+                             
+                            <ul id="food_category5" class="food_info">
+                                <li>
+                                    <div class="item row">
+                                        <div class="col-xs-4 col-sm-2">
+                                            <img src="images/menus/food-generic.jpg"  class="img-circle img-responsive" alt="Generic Food image">
+                                        </div>
+                                        <div class="col-xs-8 col-sm-10">
+                                            <div class="info">
+                                                <h4>Hamburger Fat Boy</h4>
+                                                <h5>Pret</h5>
+                                                <p>
+                                                    Lorem ipsum dolor sit amet.
+                                                </p>
+                                            </div><!-- end info --> 
+                                        </div> 
+                                    </div><!-- end item -->
+                                </li>
+                                <li>
+                                    <div class="item row">
+                                        <div class="col-xs-4 col-sm-2">
+                                            <img src="images/menus/food-generic.jpg"  class="img-circle img-responsive" alt="Generic Food image">
+                                        </div>
+                                        <div class="col-xs-8 col-sm-10">
+                                            <div class="info">
+                                                <h4>Hamburger 2</h4>
+                                                <h5>Pret</h5>
+                                                <p>
+                                                    Lorem ipsum dolor sit amet.
+                                                </p>
+                                            </div><!-- end info --> 
+                                        </div> 
+                                    </div><!-- end item -->
+                                </li>
+                                <li>
+                                    <div class="item row">
+                                        <div class="col-xs-4 col-sm-2">
+                                            <img src="images/menus/food-generic.jpg"  class="img-circle img-responsive" alt="Generic Food image">
+                                        </div>
+                                        <div class="col-xs-8 col-sm-10">
+                                            <div class="info">
+                                                <h4>Hamburger 3</h4>
+                                                <h5>Pret</h5>
+                                                <p>
+                                                    Lorem ipsum dolor sit amet.
+                                                </p>
+                                            </div><!-- end info --> 
+                                        </div> 
+                                    </div><!-- end item -->
+                                </li>
+                                <li>
+                                    <a href="#food_category5" class="to-top">Back to Top</a>
+                                </li>
+                            </ul><!-- end category5 food_info div -->
+
+                            <ul id="food_category6" class="food_info">
+                                <li>
+                                    <div class="item row">
+                                        <div class="col-xs-4 col-sm-2">
+                                            <img src="images/menus/food-generic.jpg"  class="img-circle img-responsive" alt="Generic Food image">
+                                        </div>
+                                        <div class="col-xs-8 col-sm-10">
+                                            <div class="info">
+                                                <h4>Salata de rosii</h4>
+                                                <h5>Pret</h5>
+                                                <p>
+                                                    Lorem ipsum dolor sit amet.
+                                                </p>
+                                            </div><!-- end info --> 
+                                        </div> 
+                                    </div><!-- end item -->
+                                </li>
+                                <li>
+                                    <div class="item row">
+                                        <div class="col-xs-4 col-sm-2">
+                                            <img src="images/menus/food-generic.jpg"  class="img-circle img-responsive" alt="Generic Food image">
+                                        </div>
+                                        <div class="col-xs-8 col-sm-10">
+                                            <div class="info">
+                                                <h4>Salata de castraveti</h4>
+                                                <h5>Pret</h5>
+                                                <p>
+                                                    Lorem ipsum dolor sit amet.
+                                                </p>
+                                            </div><!-- end info --> 
+                                        </div> 
+                                    </div><!-- end item -->
+                                </li>
+                                <li>
+                                    <div class="item row">
+                                        <div class="col-xs-4 col-sm-2">
+                                            <img src="images/menus/food-generic.jpg"  class="img-circle img-responsive" alt="Generic Food image">
+                                        </div>
+                                        <div class="col-xs-8 col-sm-10">
+                                            <div class="info">
+                                                <h4>Salata de beuf</h4>
+                                                <h5>Pret</h5>
+                                                <p>
+                                                    Lorem ipsum dolor sit amet.
+                                                </p>
+                                            </div><!-- end info --> 
+                                        </div> 
+                                    </div><!-- end item -->
+                                </li>
+                                <li>
+                                    <div class="item row">
+                                        <div class="col-xs-4 col-sm-2">
+                                            <img src="images/menus/food-generic.jpg"  class="img-circle img-responsive" alt="Generic Food image">
+                                        </div>
+                                        <div class="col-xs-8 col-sm-10">
+                                            <div class="info">
+                                                <h4>Salata mixta</h4>
+                                                <h5>Pret</h5>
+                                                <p>
+                                                    Lorem ipsum dolor sit amet.
+                                                </p>
+                                            </div><!-- end info --> 
+                                        </div> 
+                                    </div><!-- end item -->
+                                </li>
+                                <li>
+                                    <a href="#food_category6" class="to-top">Back to Top</a>
+                                </li>
+                            </ul><!-- end category6 food_info div -->
+                            <ul id="food_category7" class="food_info">
+                                <li>
+                                    <div class="item row">
+                                        <div class="col-xs-4 col-sm-2">
+                                            <img src="images/menus/food-generic.jpg"  class="img-circle img-responsive" alt="Generic Food image">
+                                        </div>
+                                        <div class="col-xs-8 col-sm-10">
+                                            <div class="info">
+                                                <h4>Creveti in sos</h4>
+                                                <h5>Pret</h5>
+                                                <p>
+                                                    Lorem ipsum dolor sit amet.
+                                                </p>
+                                            </div><!-- end info --> 
+                                        </div> 
+                                    </div><!-- end item -->
+                                </li>
+                                <li>
+                                    <div class="item row">
+                                        <div class="col-xs-4 col-sm-2">
+                                            <img src="images/menus/food-generic.jpg"  class="img-circle img-responsive" alt="Generic Food image">
+                                        </div>
+                                        <div class="col-xs-8 col-sm-10">
+                                            <div class="info">
+                                                <h4>Creveti in ulei</h4>
+                                                <h5>Pret</h5>
+                                                <p>
+                                                    Lorem ipsum dolor sit amet.
+                                                </p>
+                                            </div><!-- end info --> 
+                                        </div> 
+                                    </div><!-- end item -->
+                                </li>
+                                <li>
+                                    <div class="item row">
+                                        <div class="col-xs-4 col-sm-2">
+                                            <img src="images/menus/food-generic.jpg"  class="img-circle img-responsive" alt="Generic Food image">
+                                        </div>
+                                        <div class="col-xs-8 col-sm-10">
+                                            <div class="info">
+                                                <h4>Scoici suculente</h4>
+                                                <h5>Pret</h5>
+                                                <p>
+                                                    Lorem ipsum dolor sit amet.
+                                                </p>
+                                            </div><!-- end info --> 
+                                        </div> 
+                                    </div><!-- end item -->
+                                </li>
+                                <li>
+                                    <div class="item row">
+                                        <div class="col-xs-4 col-sm-2">
+                                            <img src="images/menus/food-generic.jpg"  class="img-circle img-responsive" alt="Generic Food image">
+                                        </div>
+                                        <div class="col-xs-8 col-sm-10">
+                                            <div class="info">
+                                                <h4>Melci in usturoi</h4>
+                                                <h5>Pret</h5>
+                                                <p>
+                                                    Lorem ipsum dolor sit amet.
+                                                </p>
+                                            </div><!-- end info --> 
+                                        </div> 
+                                    </div><!-- end item -->
+                                </li>
+                                <li>
+                                    <div class="item row">
+                                        <div class="col-xs-4 col-sm-2">
+                                            <img src="images/menus/food-generic.jpg"  class="img-circle img-responsive" alt="Generic Food image">
+                                        </div>
+                                        <div class="col-xs-8 col-sm-10">
+                                            <div class="info">
+                                                <h4>Creveti in sos2</h4>
+                                                <h5>Pret</h5>
+                                                <p>
+                                                    Lorem ipsum dolor sit amet.
+                                                </p>
+                                            </div><!-- end info --> 
+                                        </div> 
+                                    </div><!-- end item -->
+                                </li>
+                                <li>
+                                    <a href="#food_category7" class="to-top">Back to Top</a>
+                                </li>
+                            </ul><!-- end category7 food_info div -->
+                            <ul id="food_category8" class="food_info">
+                                <li>
+                                    <div class="item row">
+                                        <div class="col-xs-4 col-sm-2">
+                                            <img src="images/menus/food-generic.jpg"  class="img-circle img-responsive" alt="Generic Food image">
+                                        </div>
+                                        <div class="col-xs-8 col-sm-10">
+                                            <div class="info">
+                                                <h4>Cafea espresso1</h4>
+                                                <h5>Pret</h5>
+                                                <p>
+                                                    Lorem ipsum dolor sit amet.
+                                                </p>
+                                            </div><!-- end info --> 
+                                        </div> 
+                                    </div><!-- end item -->
+                                </li>
+                                <li>
+                                    <div class="item row">
+                                        <div class="col-xs-4 col-sm-2">
+                                            <img src="images/menus/food-generic.jpg"  class="img-circle img-responsive" alt="Generic Food image">
+                                        </div>
+                                        <div class="col-xs-8 col-sm-10">
+                                            <div class="info">
+                                                <h4>Cafea espresso2</h4>
+                                                <h5>Pret</h5>
+                                                <p>
+                                                    Lorem ipsum dolor sit amet.
+                                                </p>
+                                            </div><!-- end info --> 
+                                        </div> 
+                                    </div><!-- end item -->
+                                </li>
+                                <li>
+                                    <div class="item row">
+                                        <div class="col-xs-4 col-sm-2">
+                                            <img src="images/menus/food-generic.jpg"  class="img-circle img-responsive" alt="Generic Food image">
+                                        </div>
+                                        <div class="col-xs-8 col-sm-10">
+                                            <div class="info">
+                                                <h4>Cafea espresso3</h4>
+                                                <h5>Pret</h5>
+                                                <p>
+                                                    Lorem ipsum dolor sit amet.
+                                                </p>
+                                            </div><!-- end info --> 
+                                        </div> 
+                                    </div><!-- end item -->
+                                </li>
+                                <li>
+                                    <div class="item row">
+                                        <div class="col-xs-4 col-sm-2">
+                                            <img src="images/menus/food-generic.jpg"  class="img-circle img-responsive" alt="Generic Food image">
+                                        </div>
+                                        <div class="col-xs-8 col-sm-10">
+                                            <div class="info">
+                                                <h4>Cafea espresso4</h4>
+                                                <h5>Pret</h5>
+                                                <p>
+                                                    Lorem ipsum dolor sit amet.
+                                                </p>
+                                            </div><!-- end info --> 
+                                        </div> 
+                                    </div><!-- end item -->
+                                </li>
+                                <li>
+                                    <div class="item row">
+                                        <div class="col-xs-4 col-sm-2">
+                                            <img src="images/menus/food-generic.jpg"  class="img-circle img-responsive" alt="Generic Food image">
+                                        </div>
+                                        <div class="col-xs-8 col-sm-10">
+                                            <div class="info">
+                                                <h4>Cafea espresso5</h4>
+                                                <h5>Pret</h5>
+                                                <p>
+                                                    Lorem ipsum dolor sit amet.
+                                                </p>
+                                            </div><!-- end info --> 
+                                        </div> 
+                                    </div><!-- end item -->
+                                </li>
+                                <li>
+                                    <div class="item row">
+                                        <div class="col-xs-4 col-sm-2">
+                                            <img src="images/menus/food-generic.jpg"  class="img-circle img-responsive" alt="Generic Food image">
+                                        </div>
+                                        <div class="col-xs-8 col-sm-10">
+                                            <div class="info">
+                                                <h4>Cafea espresso6</h4>
+                                                <h5>Pret</h5>
+                                                <p>
+                                                    Lorem ipsum dolor sit amet.
+                                                </p>
+                                            </div><!-- end info --> 
+                                        </div> 
+                                    </div><!-- end item -->
+                                </li>
+                                <li>
+                                    <a href="#food_category8" class="to-top">Back to Top</a>
+                                </li>
+                            </ul><!-- end category8 food_info div -->
+                            <ul id="food_category9" class="food_info">
+                                <li>
+                                    <div class="item row">
+                                        <div class="col-xs-4 col-sm-2">
+                                            <img src="images/menus/food-generic.jpg"  class="img-circle img-responsive" alt="Generic Food image">
+                                        </div>
+                                        <div class="col-xs-8 col-sm-10">
+                                            <div class="info">
+                                                <h4>Ceai negru</h4>
+                                                <h5>Pret</h5>
+                                                <p>
+                                                    Lorem ipsum dolor sit amet.
+                                                </p>
+                                            </div><!-- end info --> 
+                                        </div> 
+                                    </div><!-- end item -->
+                                </li>
+                                <li>
+                                    <div class="item row">
+                                        <div class="col-xs-4 col-sm-2">
+                                            <img src="images/menus/food-generic.jpg"  class="img-circle img-responsive" alt="Generic Food image">
+                                        </div>
+                                        <div class="col-xs-8 col-sm-10">
+                                            <div class="info">
+                                                <h4>Ceai Lipton</h4>
+                                                <h5>Pret</h5>
+                                                <p>
+                                                    Lorem ipsum dolor sit amet.
+                                                </p>
+                                            </div><!-- end info --> 
+                                        </div> 
+                                    </div><!-- end item -->
+                                </li>
+                                <li>
+                                    <div class="item row">
+                                        <div class="col-xs-4 col-sm-2">
+                                            <img src="images/menus/food-generic.jpg"  class="img-circle img-responsive" alt="Generic Food image">
+                                        </div>
+                                        <div class="col-xs-8 col-sm-10">
+                                            <div class="info">
+                                                <h4>Ceai Earl Grey</h4>
+                                                <h5>Pret</h5>
+                                                <p>
+                                                    Lorem ipsum dolor sit amet.
+                                                </p>
+                                            </div><!-- end info --> 
+                                        </div> 
+                                    </div><!-- end item -->
+                                </li>
+                                <li>
+                                    <div class="item row">
+                                        <div class="col-xs-4 col-sm-2">
+                                            <img src="images/menus/food-generic.jpg"  class="img-circle img-responsive" alt="Generic Food image">
+                                        </div>
+                                        <div class="col-xs-8 col-sm-10">
+                                            <div class="info">
+                                                <h4>Ceai verde</h4>
+                                                <h5>Pret</h5>
+                                                <p>
+                                                    Lorem ipsum dolor sit amet.
+                                                </p>
+                                            </div><!-- end info --> 
+                                        </div> 
+                                    </div><!-- end item -->
+                                </li>
+                                <li>
+                                    <div class="item row">
+                                        <div class="col-xs-4 col-sm-2">
+                                            <img src="images/menus/food-generic.jpg"  class="img-circle img-responsive" alt="Generic Food image">
+                                        </div>
+                                        <div class="col-xs-8 col-sm-10">
+                                            <div class="info">
+                                                <h4>Ceai Ceylon</h4>
+                                                <h5>Pret</h5>
+                                                <p>
+                                                    Lorem ipsum dolor sit amet.
+                                                </p>
+                                            </div><!-- end info --> 
+                                        </div> 
+                                    </div><!-- end item -->
+                                </li>
+                                <li>
+                                    <div class="item row">
+                                        <div class="col-xs-4 col-sm-2">
+                                            <img src="images/menus/food-generic.jpg"  class="img-circle img-responsive" alt="Generic Food image">
+                                        </div>
+                                        <div class="col-xs-8 col-sm-10">
+                                            <div class="info">
+                                                <h4>Ceai de musetel</h4>
+                                                <h5>Pret</h5>
+                                                <p>
+                                                    Lorem ipsum dolor sit amet.
+                                                </p>
+                                            </div><!-- end info --> 
+                                        </div> 
+                                    </div><!-- end item -->
+                                </li>
+                                <li>
+                                    <div class="item row">
+                                        <div class="col-xs-4 col-sm-2">
+                                            <img src="images/menus/food-generic.jpg"  class="img-circle img-responsive" alt="Generic Food image">
+                                        </div>
+                                        <div class="col-xs-8 col-sm-10">
+                                            <div class="info">
+                                                <h4>Ceai Dallmar</h4>
+                                                <h5>Pret</h5>
+                                                <p>
+                                                    Lorem ipsum dolor sit amet.
+                                                </p>
+                                            </div><!-- end info --> 
+                                        </div> 
+                                    </div><!-- end item -->
+                                </li>
+                                <li>
+                                    <a href="#food_category9" class="to-top">Back to Top</a>
+                                </li>
+                            </ul><!-- end category9 food_info div -->
+
+                            <ul id="food_category10" class="food_info">
+                                <li>
+                                    <div class="item row">
+                                        <div class="col-xs-4 col-sm-2">
+                                            <img src="images/menus/food-generic.jpg"  class="img-circle img-responsive" alt="Generic Food image">
+                                        </div>
+                                        <div class="col-xs-8 col-sm-10">
+                                            <div class="info">
+                                                <h4>Whisky</h4>
+                                                <h5>Pret</h5>
+                                                <p>
+                                                    Lorem ipsum dolor sit amet.
+                                                </p>
+                                            </div><!-- end info --> 
+                                        </div> 
+                                    </div><!-- end item -->
+                                </li>
+                                <li>
+                                    <div class="item row">
+                                        <div class="col-xs-4 col-sm-2">
+                                            <img src="images/menus/food-generic.jpg"  class="img-circle img-responsive" alt="Generic Food image">
+                                        </div>
+                                        <div class="col-xs-8 col-sm-10">
+                                            <div class="info">
+                                                <h4>Scotch</h4>
+                                                <h5>Pret</h5>
+                                                <p>
+                                                    Lorem ipsum dolor sit amet.
+                                                </p>
+                                            </div><!-- end info --> 
+                                        </div> 
+                                    </div><!-- end item -->
+                                </li>
+                                <li>
+                                    <div class="item row">
+                                        <div class="col-xs-4 col-sm-2">
+                                            <img src="images/menus/food-generic.jpg"  class="img-circle img-responsive" alt="Generic Food image">
+                                        </div>
+                                        <div class="col-xs-8 col-sm-10">
+                                            <div class="info">
+                                                <h4>Brandy</h4>
+                                                <h5>Pret</h5>
+                                                <p>
+                                                    Lorem ipsum dolor sit amet.
+                                                </p>
+                                            </div><!-- end info --> 
+                                        </div> 
+                                    </div><!-- end item -->
+                                </li>
+                                <li>
+                                    <div class="item row">
+                                        <div class="col-xs-4 col-sm-2">
+                                            <img src="images/menus/food-generic.jpg"  class="img-circle img-responsive" alt="Generic Food image">
+                                        </div>
+                                        <div class="col-xs-8 col-sm-10">
+                                            <div class="info">
+                                                <h4>Vodka Finlandia</h4>
+                                                <h5>Pret</h5>
+                                                <p>
+                                                    Lorem ipsum dolor sit amet.
+                                                </p>
+                                            </div><!-- end info --> 
+                                        </div> 
+                                    </div><!-- end item -->
+                                </li>
+                                <li>
+                                    <div class="item row">
+                                        <div class="col-xs-4 col-sm-2">
+                                            <img src="images/menus/food-generic.jpg"  class="img-circle img-responsive" alt="Generic Food image">
+                                        </div>
+                                        <div class="col-xs-8 col-sm-10">
+                                            <div class="info">
+                                                <h4>Rasputin</h4>
+                                                <h5>Pret</h5>
+                                                <p>
+                                                    Lorem ipsum dolor sit amet.
+                                                </p>
+                                            </div><!-- end info --> 
+                                        </div> 
+                                    </div><!-- end item -->
+                                </li>
+                                <li>
+                                    <div class="item row">
+                                        <div class="col-xs-4 col-sm-2">
+                                            <img src="images/menus/food-generic.jpg"  class="img-circle img-responsive" alt="Generic Food image">
+                                        </div>
+                                        <div class="col-xs-8 col-sm-10">
+                                            <div class="info">
+                                                <h4>Jack Daniels</h4>
+                                                <h5>Pret</h5>
+                                                <p>
+                                                    Lorem ipsum dolor sit amet.
+                                                </p>
+                                            </div><!-- end info --> 
+                                        </div> 
+                                    </div><!-- end item -->
+                                </li>
+                                <li>
+                                    <div class="item row">
+                                        <div class="col-xs-4 col-sm-2">
+                                            <img src="images/menus/food-generic.jpg"  class="img-circle img-responsive" alt="Generic Food image">
+                                        </div>
+                                        <div class="col-xs-8 col-sm-10">
+                                            <div class="info">
+                                                <h4>Vodka Stalinskaia</h4>
+                                                <h5>Pret</h5>
+                                                <p>
+                                                    Lorem ipsum dolor sit amet.
+                                                </p>
+                                            </div><!-- end info --> 
+                                        </div> 
+                                    </div><!-- end item -->
+                                </li>
+                                <li>
+                                    <div class="item row">
+                                        <div class="col-xs-4 col-sm-2">
+                                            <img src="images/menus/food-generic.jpg"  class="img-circle img-responsive" alt="Generic Food image">
+                                        </div>
+                                        <div class="col-xs-8 col-sm-10">
+                                            <div class="info">
+                                                <h4>Coniac Tenesee</h4>
+                                                <h5>Pret</h5>
+                                                <p>
+                                                    Lorem ipsum dolor sit amet.
+                                                </p>
+                                            </div><!-- end info --> 
+                                        </div> 
+                                    </div><!-- end item -->
+                                </li>
+                                <li>
+                                    <a href="#food_category10" class="to-top">Back to Top</a>
+                                </li>
+                            </ul><!-- end category10 food_info div -->
+
+                            <ul id="food_category11" class="food_info">
+                                <li>
+                                    <a href="#food_category11" class="to-top">Back to Top</a>
+                                </li>
+                            </ul><!-- end food_category11-->
+
+                            <ul id="food_category12" class="food_info">
+                                <li>
+                                    <a href="#food_category12" class="to-top">Back to Top</a>
+                                </li>
+                            </ul><!-- end food_category12 -->
+
+                            <ul id="food_category13" class="food_info">
+                                <li>
+                                    <div class="item row">
+                                        <div class="col-xs-4 col-sm-2">
+                                            <img src="images/menus/food-generic.jpg"  class="img-circle img-responsive" alt="Generic Food image">
+                                        </div>
+                                        <div class="col-xs-8 col-sm-10">
+                                            <div class="info">
+                                                <h4>Coca Cola</h4>
+                                                <h5>Pret</h5>
+                                                <p>
+                                                    Lorem ipsum dolor sit amet.
+                                                </p>
+                                            </div><!-- end info --> 
+                                        </div> 
+                                    </div><!-- end item -->
+                                </li>
+                                <li>
+                                    <a href="#food_category13" class="to-top">Back to Top</a>
+                                </li>
+                            </ul><!-- end food_category13 -->
+
+                            <ul id="food_category14" class="food_info">
+                                <li>
+                                    <a href="#food_category14" class="to-top">Back to Top</a>
+                                </li>
+                            </ul><!-- end food_category14 -->
+                            
+                            <ul id="food_category15" class="food_info">
+                                <li>
+                                    <div class="item row">
+                                        <div class="col-xs-4 col-sm-2">
+                                            <img src="images/menus/food-generic.jpg"  class="img-circle img-responsive" alt="Generic Food image">
+                                        </div>
+                                        <div class="col-xs-8 col-sm-10">
+                                            <div class="info">
+                                                <h4>Tort Napoleon</h4>
+                                                <h5>Pret</h5>
+                                                <p>
+                                                    Lorem ipsum dolor sit amet.
+                                                </p>
+                                            </div><!-- end info --> 
+                                        </div> 
+                                    </div><!-- end item -->
+                                </li>
+                                <li>
+                                    <a href="#food_category15" class="to-top">Back to Top</a>
+                                </li>
+                            </ul><!-- end food_category11-->
+                        </div><!-- end col-sm-8 -->
+                    </div> <!-- end row  -->
+
+                </div><!-- end menu -->
+                     
+                <div id="directions">
+                    <div class="directions_place">
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <h3><i class="fa fa-map-marker"></i> Direcţii spre locaţie</h3>
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2768.2138530393245!2d23.5714079513966!3d46.066776879010135!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x474ea7e0af7b5653%3A0x5b6c2ee0c9997d1f!2sHotel+Medieval!5e0!3m2!1sro!2sro!4v1512555833687" width="100%" height="400" style="border:0" allowfullscreen></iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div><!-- end directions -->
+                 
+                <div id="testimonial">
+                    <h3><i class="fa fa-comments"></i> Recenzii</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error esse quae libero porro culpa eius aut, ullam inventore repellendus harum, hic. Perferendis maiores accusamus numquam necessitatibus veniam et dolores ullam.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error esse quae libero porro culpa eius aut, ullam inventore repellendus harum, hic. Perferendis maiores accusamus numquam necessitatibus veniam et dolores ullam.Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                        Error esse quae libero porro culpa eius aut, ullam inventore repellendus harum, hic. 
+                        Perferendis maiores accusamus numquam necessitatibus veniam et dolores ullam.
+                    </p>
+
+                    <div class="testimonials">
+                        <div class="row">
+                            <div class="col-xs-12 col-centered">
+                                <div id="carousel" class="carousel slide" data-ride="carousel" data-type="multi" data-interval="5000">
+                                    <div class="carousel-inner">
+                                        <div class="item active">
+                                            <div class="row carousel-col">
+                                                <div class="col-xs-12 col-sm-10 col-sm-push-2">
+                                                    <blockquote>
+                                                        First Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae magni sapiente enim soluta! Numquam natus fuga accusantium, delectus necessitatibus fugit totam iure rerum mollitia aliquam quae! Dolores, harum, quae? Expedita.
+                                                        Lectetur adipisicing elit. Quae magni sapiente enim soluta! Numquam natus fuga accusantium, delectus necessitatibus fugit totam iure rerum mollitia.
+                                                        <div class="arrow-up"></div>
+                                                    </blockquote>
+                                                </div>                                            
+                                                <div class="col-xs-12 col-sm-2 col-sm-pull-10">
+                                                    <img src="images/testimonials/testimonial1.jpg" class="img-circle" alt="Testimonial 1">
+                                                </div>
+                                            </div><!-- end row carousel-col -->
+                                        </div><!-- end item -->
+                                        <div class="item">
+                                            <div class="row carousel-col">
+                                                <div class="col-xs-12 col-sm-10 col-sm-push-2">
+                                                    <blockquote>
+                                                        Second Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae magni sapiente enim soluta! Numquam natus fuga accusantium, delectus necessitatibus fugit totam iure rerum mollitia aliquam quae! Dolores, harum, quae? Expedita.
+                                                        Lectetur adipisicing elit. Quae magni sapiente enim soluta! Numquam natus.
+                                                        <div class="arrow-up"></div>
+                                                    </blockquote>
+                                                </div>                                            
+                                                <div class="col-xs-12 col-sm-2 col-sm-pull-10">
+                                                    <img src="images/testimonials/testimonial2.jpg" class="img-circle" alt="Testimonial 2">
+                                                </div>
+                                            </div><!-- end row carousel-col -->
+                                        </div><!-- end item -->
+                                        <div class="item">
+                                            <div class="row carousel-col">
+                                                <div class="col-xs-12 col-sm-10 col-sm-push-2">
+                                                    <blockquote>
+                                                        Third Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae magni sapiente enim soluta! Numquam natus fuga accusantium, delectus necessitatibus fugit totam iure rerum mollitia aliquam quae! Dolores, harum, quae? Expedita.
+                                                        Lectetur adipisicing elit. Quae magni sapiente enim soluta! Numquam natus fuga accusantium, delectus necessitatibus fugit totam iure rerum  consectetur adipisicing elit. Iusto magni aspernatur accusamus, labore non unde facere nisi ipsam magnam mollitia, in, optio ipsa? 
+                                                        <div class="arrow-up"></div>
+                                                    </blockquote>
+                                                </div>                                            
+                                                <div class="col-xs-12 col-sm-2 col-sm-pull-10">
+                                                    <img src="images/testimonials/testimonial3.jpg" class="img-circle" alt="Testimonial 3">
+                                                </div>
+                                            </div><!-- end row carousel-col -->
+                                        </div><!-- end item -->
+                                        <div class="item">
+                                            <div class="row carousel-col">
+                                                <div class="col-xs-12 col-sm-10 col-sm-push-2">
+                                                    <blockquote>
+                                                        Third Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae magni sapiente. 
+                                                        <div class="arrow-up"></div>
+                                                    </blockquote>
+                                                </div>                                            
+                                                <div class="col-xs-12 col-sm-2 col-sm-pull-10">
+                                                    <img src="images/testimonials/testimonial4.jpg" class="img-circle" alt="Testimonial 4">
+                                                </div>
+                                            </div><!-- end row carousel-col -->
+                                        </div><!-- end item -->
+                                    </div><!-- end carousel-inner -->
+
+                                    <!-- Controls -->
+                                    <div class="left carousel-control">
+                                        <a href="#carousel" role="button" data-slide="prev">
+                                            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                                            <span class="sr-only">Previous</span>
+                                        </a>
+                                    </div>
+                                    <div class="right carousel-control">
+                                        <a href="#carousel" role="button" data-slide="next">
+                                            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                                            <span class="sr-only">Next</span>
+                                        </a>
+                                    </div>
+                                </div><!-- end carousel -->
+                            </div><!-- end col-xs-12 -->
+                        </div><!-- end row-->
+                    </div><!-- end testimonials--> 
+
+                    <h4>Vă rugăm să acordaţi o calificare serviciilor noastre.</h4>
+                    <div class="row">
+                        <div class="col-sm-12 qualities">
+                            <h5>Calitatea mesei</h5>
+                                <div id="meal_quality">
+                                    <select id="meal_q">
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5</option>
+                                    </select>
+                                </div><!-- end meal quality -->
+                        </div>
+                    </div><!-- end row -->
+
+                    <div class="row">
+                        <div class="col-sm-12 qualities">
+                            <h5>Promptitudinea servirii</h5>
+                                <div id="fast_service">
+                                    <select id="fast_s">
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5</option>
+                                    </select>
+                                </div><!-- end fast service -->
+                        </div>
+                    </div><!-- end row -->
+
+                    <div class="row">
+                        <div class="col-sm-12 qualities">
+                            <h5>Preţul mesei</h5>
+                                <div id="meal_price">
+                                    <select id="meal_p">
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5</option>
+                                    </select>
+                                </div><!-- end meal quality -->
+                        </div>
+                    </div><!-- end row -->
+
+                    <p class="hidden-xs">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error esse quae libero porro culpa eius aut, ullam inventore repellendus harum, hic. Perferendis maiores accusamus numquam necessitatibus veniam et dolores ullam.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error esse quae libero porro culpa eius aut, ullam inventore repellendus harum, hic. Perferendis maiores accusamus numquam necessitatibus veniam et dolores ullam.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error esse quae libero porro culpa eius aut, ullam inventore repellendus harum, hic. Perferendis maiores accusamus numquam necessitatibus veniam et dolores ullam.
+                    </p>
+                    
+                </div><!-- end id testimonial -->
+            </div><!-- end container bootstrap_scrollspy -->
+
+            <script src="js/jquery-1.12.4.js"></script> 
+            <script src="js/bootstrap.min.js"></script> 
+            <script src="js/jquery.barrating.min.js"></script>
+            <script src="fancybox/jquery.fancybox.pack.js"></script>
+            <script src="js/lightslider.js"></script>
+            <script src="js/script.js"></script> 
+            <script>
+               $('h3').click(function(){
+                   $(this).toggleClass('green');  
+               }); 
+               
+            </script>
+           
+        </body>
+    </html>
